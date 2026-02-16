@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sri Charan Pedhiti | Cybersecurity Specialist</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <canvas id="bg-canvas"></canvas>
+
+  <div id="app">
+    <nav class="navbar">
+      <div class="logo">SRICHARAN<span class="highlight">.IO</span></div>
+
+      <!-- Desktop Nav -->
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- Mobile Nav Toggle -->
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+      <div class="close-menu"><i class="fas fa-times"></i></div>
+      <ul class="mobile-nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <main>
+      <!-- HERO -->
+      <section id="hero">
+        <div class="container hero-content">
+          <div class="hero-text reveal">
+            <p class="mono-text">Hi, my name is</p>
+            <h1 class="big-heading">Sri Charan Pedhiti.</h1>
+            <h2 class="big-heading text-muted">I build things for the web & secure them.</h2>
+            <p class="hero-desc">
+              I'm a cybersecurity specialist and master's student focused on
+              <span class="highlight">Offensive Security</span>, <span class="highlight">Cloud Defense</span>,
+              and building resilient digital architecture.
+            </p>
+            <div class="hero-btns">
+              <a href="#projects" class="btn primary-btn">Check my work</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about">
+        <div class="container">
+          <h2 class="section-title reveal"><span>01.</span> About Me</h2>
+          <div class="about-grid reveal">
+            <div class="about-text">
+              <p>
+                I specialize in dissecting complex systems to understand how they break. My journey into cybersecurity
+                began with a curiosity for low-level logic, leading me to explore the depths of
+                <span class="highlight">Network Security</span> and <span class="highlight">Web Exploitation</span>.
+              </p>
+              <p>
+                Currently, I focus on **Red Teaming** operations and **Vulnerability Assessment**, utilizing an
+                adversary's mindset to strengthen defensive architectures.
+                I have experience working with <span class="highlight">Accenture</span> on enterprise security
+                challenges and am currently researching advanced threat detection at <span class="highlight">UNC
+                  Charlotte</span>.
+              </p>
+              <p>
+                When I'm not auditing code or analyzing packet captures, you'll find me climbing the leaderboards on CTF
+                platforms or dissecting malware samples in my home lab.
+              </p>
+              <ul class="stats-list">
+                <li><i class="fas fa-cube"></i> HTB: Hacker Rank</li>
+                <li><i class="fas fa-bug"></i> THM: Top 1%</li>
+                <li><i class="fas fa-shield-alt"></i> Red Teaming</li>
+                <li><i class="fas fa-cloud"></i> Cloud Sec</li>
+              </ul>
+            </div>
+            <div class="about-img">
+              <div class="img-wrapper">
+                <img src="https://github.com/Char0n1507.png" alt="Profile">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS (Redesigned) -->
+      <section id="skills">
+        <div class="container">
+          <h2 class="section-title reveal"><span>02.</span> Technologies</h2>
+
+          <div class="skills-grid">
+            <!-- Offensive -->
+            <div class="skill-card reveal">
+              <div class="skill-icon"><i class="fas fa-skull-crossbones"></i></div>
+              <h3>Offensive Security</h3>
+              <div class="skill-tags">
+                <span><i class="fas fa-bug"></i> Metasploit</span>
+                <span><i class="fas fa-mask"></i> Burp Suite</span>
+                <span><i class="fas fa-network-wired"></i> Nmap</span>
+                <span><i class="fas fa-wifi"></i> AirCrack-ng</span>
+              </div>
+            </div>
+
+            <!-- Defensive -->
+            <div class="skill-card reveal">
+              <div class="skill-icon"><i class="fas fa-shield-alt"></i></div>
+              <h3>Blue Team & Cloud</h3>
+              <div class="skill-tags">
+                <span><i class="fab fa-microsoft"></i> Azure SC-900</span>
+                <span><i class="fas fa-lock"></i> Splunk</span>
+                <span><i class="fas fa-server"></i> Active Directory</span>
+                <span><i class="fas fa-fire-alt"></i> WAF</span>
+              </div>
+            </div>
+
+            <!-- Development -->
+            <div class="skill-card reveal">
+              <div class="skill-icon"><i class="fas fa-code"></i></div>
+              <h3>Development</h3>
+              <div class="skill-tags">
+                <span><i class="fab fa-python"></i> Python</span>
+                <span><i class="fab fa-js"></i> JavaScript</span>
+                <span><i class="fab fa-docker"></i> Docker</span>
+                <span><i class="fab fa-linux"></i> Linux</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects">
+        <div class="container">
+          <h2 class="section-title reveal"><span>03.</span> Some Things I've Built</h2>
+
+          <!-- Featured Project -->
+          <div class="featured-project reveal">
+            <div class="featured-content">
+              <p class="featured-label">Featured Project</p>
+              <h3 class="featured-title">Project Alpha</h3>
+              <div class="featured-desc">
+                <p>A machine-learning based vulnerability scanner that detects zero-day exploits in real-time network
+                  traffic.
+                  It uses a custom TensorFlow model to analyze packet headers and flag anomalies with 99% accuracy.</p>
+              </div>
+              <ul class="featured-tech">
+                <li>Python</li>
+                <li>TensorFlow</li>
+                <li>Scapy</li>
+                <li>Grafana</li>
+              </ul>
+              <div class="featured-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <div class="featured-img">
+              <!-- Placeholder for project image -->
+              <div class="project-img-placeholder"></div>
+            </div>
+          </div>
+
+          <!-- Other Projects Grid -->
+          <div class="projects-grid reveal">
+            <!-- Project 2 -->
+            <div class="project-card">
+              <div class="card-header">
+                <i class="far fa-folder open-icon"></i>
+                <div class="external-links">
+                  <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+              <h3 class="card-title">Secure Void</h3>
+              <div class="card-desc">
+                <p>Encrypted mesh network protocol designed for autonomous drone swarms operating in hostile
+                  environments.</p>
+              </div>
+              <ul class="card-tech">
+                <li>C++</li>
+                <li>LoRaWAN</li>
+                <li>AES-256</li>
+              </ul>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+              <div class="card-header">
+                <i class="far fa-folder open-icon"></i>
+                <div class="external-links">
+                  <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+              <h3 class="card-title">Black Box</h3>
+              <div class="card-desc">
+                <p>Automated malware analysis sandbox that generates behavioral reports for suspicious executables.</p>
+              </div>
+              <ul class="card-tech">
+                <li>Go</li>
+                <li>VirtualBox API</li>
+                <li>YARA</li>
+              </ul>
+            </div>
+            <!-- Project 4 -->
+            <div class="project-card">
+              <div class="card-header">
+                <i class="far fa-folder open-icon"></i>
+                <div class="external-links">
+                  <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+              <h3 class="card-title">Ghost Shell</h3>
+              <div class="card-desc">
+                <p>A lightweight, obfustcated reverse shell generator for Red Team engagements.</p>
+              </div>
+              <ul class="card-tech">
+                <li>Powershell</li>
+                <li>Rust</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact">
+        <div class="container contact-container reveal">
+          <p class="mono-text">04. What's Next?</p>
+          <h2 class="big-heading">Get In Touch</h2>
+          <p class="contact-desc">
+            I'm currently looking for new opportunities, and my inbox is always open.
+            Whether you have a question or just want to say hi, I'll try my best to get back to you!
+          </p>
+          <a href="mailto:contact@sricharan.io" class="btn primary-btn big-btn">Say Hello</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Designed & Built by Sri Charan Pedhiti</p>
+      <div class="social-links">
+        <a href="https://github.com/Char0n1507"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/sricharan-pedhiti"><i class="fab fa-linkedin"></i></a>
+        <a href="https://app.hackthebox.com/public/users/2063634"><i class="fas fa-cube"></i></a>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
