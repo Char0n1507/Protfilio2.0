@@ -9,8 +9,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script type="module" crossorigin src="/Char0n.io/assets/index-TedecOtN.js"></script>
-  <link rel="stylesheet" crossorigin href="/Char0n.io/assets/index-BqNmnsCP.css">
+  <script type="module" crossorigin src="/Char0n.io/assets/index-ClySfyPM.js"></script>
+  <link rel="stylesheet" crossorigin href="/Char0n.io/assets/index-DPbRMaMQ.css">
 </head>
 
 <body>
@@ -18,18 +18,18 @@
 
   <div id="app">
     <nav class="navbar">
-      <div class="logo">SRICHARAN<span class="highlight">.IO</span></div>
+      <a href="#" class="logo-image-container">
+        <img src="/Char0n.io/cyber_logo.png" alt="Char0n Logo" class="nav-logo">
+      </a>
 
       <!-- Desktop Nav -->
       <ul class="nav-links">
         <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#experience">Experience</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#projects">Work</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#projects">Blog</a></li>
+        <li><a href="https://app.hackthebox.com/users/your_id_here" target="_blank" rel="noopener noreferrer">HTB</a>
+        </li>
       </ul>
 
       <!-- Mobile Nav Toggle -->
@@ -43,33 +43,49 @@
       <div class="close-menu"><i class="fas fa-times"></i></div>
       <ul class="mobile-nav-links">
         <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#experience">Experience</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#projects">Work</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#projects">Blog</a></li>
+        <li><a href="https://app.hackthebox.com/users/your_id_here" target="_blank" rel="noopener noreferrer">HTB</a>
+        </li>
       </ul>
     </div>
 
     <main>
       <!-- HERO -->
-      <section id="hero">
-        <div class="container hero-content">
-          <div class="hero-text reveal">
-            <p class="mono-text">Hi, my name is</p>
-            <h1 class="big-heading">Sri Charan Pedhiti.</h1>
-            <h2 class="big-heading text-muted">I build things for the web & secure them.</h2>
-            <p class="hero-desc">
-              I'm a cybersecurity specialist and master's student focused on
-              <span class="highlight">Offensive Security</span>, <span class="highlight">Cloud Defense</span>,
-              and building resilient digital architecture.
-            </p>
-            <div class="hero-btns">
-              <a href="#projects" class="btn primary-btn">Check my work</a>
-              <a href="/Sri Charan Pedhiti.pdf" class="btn secondary-btn" download>Download Resume</a>
+      <section id="hero" class="hero-centered">
+        <div class="container hero-content-centered reveal">
+          <div class="hero-terminal reveal">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="terminal-title">guest@char0n:~</div>
             </div>
+            <div class="terminal-body">
+              <div class="terminal-line">
+                <span class="prompt">guest@char0n:~$</span>
+                <span id="typing-text"></span><span class="cursor">_</span>
+              </div>
+              <div id="terminal-output" class="terminal-output hidden">
+                <div class="terminal-logo-wrapper">
+                  <img src="/Char0n.io/cyber_logo.png" alt="Cyber Logo" class="terminal-logo">
+                </div>
+                <span class="highlight">[+] Access Granted.</span><br>
+                Initiating secure connection...
+              </div>
+            </div>
+          </div>
+          <h1 class="hero-gradient-heading">Architecting Digital Resilience</h1>
+          <p class="hero-desc-centered">
+            Cybersecurity specialist passionate about Offensive<br>
+            Security, Defensive Security, and solving complex puzzles.
+          </p>
+          <div class="hero-buttons">
+            <a href="#skills" class="btn-pill btn-pill-outline">Explore Skills</a>
+            <a href="#projects" class="btn-pill btn-pill-outline">View Blog</a>
           </div>
         </div>
       </section>
@@ -203,47 +219,64 @@
         </div>
       </section>
 
-      <!-- SKILLS (Redesigned) -->
+      <!-- SKILLS (Bento Box Design) -->
       <section id="skills">
         <div class="container">
-          <h2 class="section-title reveal"><span>04.</span> Technologies</h2>
+          <h2 class="section-title reveal" style="justify-content: center; margin-bottom: 40px;">
+            <span>04.</span> Skills Architecture
+          </h2>
 
-          <div class="skills-grid">
-            <!-- Offensive -->
-            <div class="skill-card reveal">
-              <div class="skill-icon"><i class="fas fa-skull-crossbones"></i></div>
-              <h3>Offensive Security</h3>
-              <div class="skill-tags">
-                <span><i class="fas fa-bug"></i> Metasploit</span>
-                <span><i class="fas fa-mask"></i> Burp Suite</span>
-                <span><i class="fas fa-network-wired"></i> Nmap</span>
-                <span><i class="fas fa-wifi"></i> AirCrack-ng</span>
+          <div class="bento-grid reveal">
+
+            <!-- Offensive Security -->
+            <div class="bento-card bento-offensive">
+              <div class="bento-header">
+                <i class="fas fa-skull-crossbones bento-icon red-glow"></i>
+                <h3>Offensive Security</h3>
+              </div>
+              <p class="text-muted">Simulating adversary attacks to identify and exploit vulnerabilities before they are
+                weaponized.</p>
+              <div class="bento-tags">
+                <span class="tag-red">Penetration Testing</span>
+                <span class="tag-red">Red Team Ops</span>
+                <span class="tag-red">Reverse Engineering</span>
+                <span class="tag-red">C2 Frameworks</span>
+                <span class="tag-red">Exploitation</span>
               </div>
             </div>
 
-            <!-- Defensive -->
-            <div class="skill-card reveal">
-              <div class="skill-icon"><i class="fas fa-shield-alt"></i></div>
-              <h3>Blue Team & Cloud</h3>
-              <div class="skill-tags">
-                <span><i class="fab fa-microsoft"></i> Azure SC-900</span>
-                <span><i class="fas fa-lock"></i> Splunk</span>
-                <span><i class="fas fa-server"></i> Active Directory</span>
-                <span><i class="fas fa-fire-alt"></i> WAF</span>
+            <!-- Defensive Security -->
+            <div class="bento-card bento-defensive">
+              <div class="bento-header">
+                <i class="fas fa-shield-alt bento-icon blue-glow"></i>
+                <h3>Defensive Security</h3>
+              </div>
+              <p class="text-muted">Building robust defenses, monitoring network telemetry, and responding to active
+                threats.</p>
+              <div class="bento-tags">
+                <span class="tag-blue">Threat Hunting</span>
+                <span class="tag-blue">DFIR</span>
+                <span class="tag-blue">SOC Operations</span>
+                <span class="tag-blue">Incident Handling</span>
               </div>
             </div>
 
-            <!-- Development -->
-            <div class="skill-card reveal">
-              <div class="skill-icon"><i class="fas fa-code"></i></div>
-              <h3>Development</h3>
-              <div class="skill-tags">
-                <span><i class="fab fa-python"></i> Python</span>
-                <span><i class="fab fa-js"></i> JavaScript</span>
-                <span><i class="fab fa-docker"></i> Docker</span>
-                <span><i class="fab fa-linux"></i> Linux</span>
+            <!-- Purple Team & Architecture -->
+            <div class="bento-card bento-purple">
+              <div class="bento-header">
+                <i class="fas fa-brain bento-icon purple-glow"></i>
+                <h3>Purple Team & Detection</h3>
+              </div>
+              <p class="text-muted">Bridging the gap between offense and defense to build better detections and
+                resilient architectures.</p>
+              <div class="bento-tags">
+                <span class="tag-purple">Adversary Emulation</span>
+                <span class="tag-purple">Detection Engineering</span>
+                <span class="tag-purple">Threat Modeling</span>
+                <span class="tag-purple">Telemetry Analysis</span>
               </div>
             </div>
+
           </div>
         </div>
       </section>
@@ -322,6 +355,271 @@
         <img class="modal-content" id="modal-img">
       </div>
 
+      <!-- OFFENSIVE SECURITY PROFILES -->
+      <section id="htb">
+        <div class="container">
+          <h2 class="section-title reveal"><span>05.5</span> Security Platforms</h2>
+
+          <div class="htb-container reveal">
+            <div class="htb-profile">
+              <h3>My Profiles</h3>
+              <p class="text-muted">Tracking my learning progress and machine owning journey.</p>
+
+              <div class="profile-badges">
+                <!-- HackTheBox -->
+                <a href="https://app.hackthebox.com/users/2063634" target="_blank" rel="noopener noreferrer">
+                  <img src="https://www.hackthebox.eu/badge/image/2063634" alt="HTB Profile Badge"
+                    class="platform-badge">
+                </a>
+
+                <!-- TryHackMe -->
+                <a href="https://tryhackme.com/p/Char0n1507" target="_blank" rel="noopener noreferrer">
+                  <img src="https://tryhackme-badges.s3.amazonaws.com/Char0n1507.png" alt="TryHackMe Badge"
+                    class="platform-badge" style="margin-top: 15px;">
+                </a>
+              </div>
+            </div>
+
+            <div class="htb-writeups">
+              <h3>CTF Writeups</h3>
+              <div class="writeups-grid scrollable-grid">
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/certified"
+                  target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Certified</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/fluffy"
+                  target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Fluffy</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/manager"
+                  target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Manager</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/remote"
+                  target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Remote</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/access"
+                  target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Access</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/vintage"
+                  target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Vintage</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/puppy"
+                  target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Puppy</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/tombwatcher"
+                  target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Tombwatcher</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/voleur"
+                  target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Voleur</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/imagery"
+                  target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Imagery</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/sequel"
+                  target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>sequel</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/sau" target="_blank"
+                  rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Sau</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/return"
+                  target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Return</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/administrator"
+                  target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Administrator</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/builder"
+                  target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Builder</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/soccer"
+                  target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Soccer</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/delivery"
+                  target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Delivery</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/pandora"
+                  target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Pandora</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/postman"
+                  target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Postman</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/twomillion"
+                  target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>TwoMillion</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/heal" target="_blank"
+                  rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Heal</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/jeeves"
+                  target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Jeeves</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/union"
+                  target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Union</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/forest"
+                  target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Forest</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/sauna"
+                  target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Sauna</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/scrambled"
+                  target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Scrambled</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/craft"
+                  target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Craft</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/flight"
+                  target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Flight</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/driver"
+                  target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Driver</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/outdated"
+                  target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Outdated</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/agile"
+                  target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Agile</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/hospital"
+                  target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Hospital</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/blackfield"
+                  target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Blackfield</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PERSONAL INTERESTS (Offline Mode) -->
+      <section id="interests">
+        <div class="container">
+          <h2 class="section-title reveal"><span>05.8</span> Beyond the Screen</h2>
+
+          <div class="interests-grid reveal">
+            <!-- Cooking -->
+            <div class="interest-card">
+              <div class="interest-icon"><i class="fa-solid fa-utensils" style="color: #ff9a9e;"></i></div>
+              <h3>Cooking</h3>
+              <p class="text-muted">Experimenting with flavors and precise recipes. A perfect blend of art, science, and
+                patience.</p>
+            </div>
+
+            <!-- Animation -->
+            <div class="interest-card">
+              <div class="interest-icon"><i class="fa-solid fa-film" style="color: #a18cd1;"></i></div>
+              <h3>Animation</h3>
+              <p class="text-muted">Bringing ideas to life through motion graphics and visual storytelling techniques.
+              </p>
+            </div>
+
+            <!-- Photography -->
+            <div class="interest-card">
+              <div class="interest-icon"><i class="fa-solid fa-camera" style="color: #84fab0;"></i></div>
+              <h3>Photography</h3>
+              <p class="text-muted">Looking for the stories hidden in the scenery. Capturing moments from unique
+                perspectives.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- PROJECTS -->
       <section id="projects">
         <div class="container">
@@ -331,11 +629,10 @@
           <div class="featured-project reveal">
             <div class="featured-content">
               <p class="featured-label">Featured Project</p>
-              <h3 class="featured-title">Project Alpha</h3>
+              <h3 class="featured-title">ARGUS</h3>
               <div class="featured-desc">
-                <p>A machine-learning based vulnerability scanner that detects zero-day exploits in real-time network
-                  traffic.
-                  It uses a custom TensorFlow model to analyze packet headers and flag anomalies with 99% accuracy.</p>
+                <p>Next-Gen Network Detection & Response (NDR) tool using Unsupervised Deep Learning to catch zero-day
+                  exploits in real-time. Features deep packet inspection and enterprise logging.</p>
               </div>
               <ul class="featured-tech">
                 <li>Python</li>
@@ -344,8 +641,8 @@
                 <li>Grafana</li>
               </ul>
               <div class="featured-links">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                <a href="https://github.com/Char0n1507/ARGUS" target="_blank" rel="noopener noreferrer"><i
+                    class="fab fa-github"></i></a>
               </div>
             </div>
             <div class="featured-img">
@@ -361,18 +658,19 @@
               <div class="card-header">
                 <i class="far fa-folder open-icon"></i>
                 <div class="external-links">
-                  <a href="#"><i class="fab fa-github"></i></a>
+                  <a href="https://github.com/Char0n1507/C.O.R.E" target="_blank" rel="noopener noreferrer"><i
+                      class="fab fa-github"></i></a>
                 </div>
               </div>
-              <h3 class="card-title">Secure Void</h3>
+              <h3 class="card-title">C.O.R.E</h3>
               <div class="card-desc">
-                <p>Encrypted mesh network protocol designed for autonomous drone swarms operating in hostile
-                  environments.</p>
+                <p>A fully-functional, AI-driven Security Operations Center (SOC) agent designed to automate detection
+                  and response.</p>
               </div>
               <ul class="card-tech">
-                <li>C++</li>
-                <li>LoRaWAN</li>
-                <li>AES-256</li>
+                <li>Python</li>
+                <li>AI</li>
+                <li>Automation</li>
               </ul>
             </div>
 
@@ -381,17 +679,20 @@
               <div class="card-header">
                 <i class="far fa-folder open-icon"></i>
                 <div class="external-links">
-                  <a href="#"><i class="fab fa-github"></i></a>
+                  <a href="https://github.com/Char0n1507/EREBUS" target="_blank" rel="noopener noreferrer"><i
+                      class="fab fa-github"></i></a>
                 </div>
               </div>
-              <h3 class="card-title">Black Box</h3>
+              <h3 class="card-title">EREBUS</h3>
               <div class="card-desc">
-                <p>Automated malware analysis sandbox that generates behavioral reports for suspicious executables.</p>
+                <p>AI-Powered Dark Web OSINT Tool combining Tor-based crawling with local LLMs (Ollama) to find, filter,
+                  and visualize hidden service content.</p>
               </div>
               <ul class="card-tech">
-                <li>Go</li>
-                <li>VirtualBox API</li>
-                <li>YARA</li>
+                <li>Python</li>
+                <li>Tor</li>
+                <li>LLM</li>
+                <li>Streamlit</li>
               </ul>
             </div>
             <!-- Project 4 -->
@@ -399,16 +700,19 @@
               <div class="card-header">
                 <i class="far fa-folder open-icon"></i>
                 <div class="external-links">
-                  <a href="#"><i class="fab fa-github"></i></a>
+                  <a href="https://github.com/Char0n1507/Omnisearch" target="_blank" rel="noopener noreferrer"><i
+                      class="fab fa-github"></i></a>
                 </div>
               </div>
-              <h3 class="card-title">Ghost Shell</h3>
+              <h3 class="card-title">Omnisearch</h3>
               <div class="card-desc">
-                <p>A lightweight, obfustcated reverse shell generator for Red Team engagements.</p>
+                <p>An all-in-one attack surface mapping tool for penetration testers combining passive reconnaissance,
+                  web probing, and visual reconnaissance.</p>
               </div>
               <ul class="card-tech">
-                <li>Powershell</li>
-                <li>Rust</li>
+                <li>OSINT</li>
+                <li>Recon</li>
+                <li>Python</li>
               </ul>
             </div>
           </div>
@@ -438,7 +742,8 @@
       </div>
     </footer>
   </div>
-
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
 </body>
 
 </html>
