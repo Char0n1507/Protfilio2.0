@@ -200,6 +200,35 @@ const setupUI = () => {
 
     const revealElements = document.querySelectorAll('.reveal');
     revealElements.forEach(el => observer.observe(el));
+
+    // 3. Modal for Certifications
+    const certModal = document.getElementById('cert-modal');
+    const modalImg = document.getElementById('modal-img');
+    const closeModalBtn = document.querySelector('.close-modal');
+    const viewImgBtns = document.querySelectorAll('.view-cert-img');
+
+    if (certModal && modalImg && closeModalBtn) {
+        viewImgBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const imgSrc = btn.getAttribute('data-img');
+                if (imgSrc) {
+                    modalImg.src = imgSrc;
+                    certModal.style.display = 'block';
+                }
+            });
+        });
+
+        closeModalBtn.addEventListener('click', () => {
+            certModal.style.display = 'none';
+        });
+
+        // Close when clicking outside image
+        window.addEventListener('click', (e) => {
+            if (e.target === certModal) {
+                certModal.style.display = 'none';
+            }
+        });
+    }
 };
 
 setupUI();
